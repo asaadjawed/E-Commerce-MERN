@@ -7,7 +7,7 @@ const CreatePage = () => {
   const [newProduct, setNewProduct] = useState({
     name: '',
     price: '',
-    image: '',
+    image: '', 
   })
 
   const { createProduct} = useProductStore();
@@ -15,8 +15,6 @@ const CreatePage = () => {
 
     console.log('newProduct', newProduct);
     const {success, message} = await createProduct(newProduct);
-    console.log(success,"success");
-    console.log(message, "message");
     setNewProduct({name: "", price: "", image: "",})
   }
   return (
