@@ -9,7 +9,7 @@
     "start": "node server.js",
     "frontend-install": "npm install --prefix frontend",
     "frontend-build": "npm run build --prefix frontend"
-    },
+  },
   "type": "module",
   "keywords": [],
   "author": "",
